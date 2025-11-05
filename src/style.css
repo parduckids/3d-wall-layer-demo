@@ -1,0 +1,76 @@
+body { 
+  margin: 0; 
+  overflow: hidden; 
+  background: #f4f4f4; 
+  font-family: sans-serif; 
+}
+#tooltip {
+  position: absolute;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 13px;
+}
+
+#ui-container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+h3, h4 {
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+#calc-results {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#calc-results b {
+  color: #000;
+}
+
+#wall-builder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#wall-builder-form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: #555;
+}
+
+#wall-builder-form select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+
+#wall-builder-form select:disabled {
+  background: #f0f0f0;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.form-step.hidden {
+  display: none;
+}

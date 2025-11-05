@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Wall U-Value Builder</title>
+    <script type="module" crossorigin src="/assets/index-Cbf5-6lc.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BksYQzDw.css">
+  </head>
+  <body>
+    <div id="tooltip"></div>
+
+    <div id="ui-container">
+      
+      <div id="calculator-output">
+        <h3>Wall Assembly</h3>
+        <div id="calc-results">
+          </div>
+      </div>
+    
+      <div id="wall-builder-form">
+        <h4>Build Your Wall</h4>
+        
+        <div class="form-step" id="step-1">
+          <label for="select-wall-type">1. Select Type of Wall:</label>
+          <select id="select-wall-type">
+            <option value="" selected disabled>Please select...</option>
+            <option value="masonry">Masonry Cavity Walls</option>
+            <option value="timber" disabled>Timber Frame (coming soon)</option>
+            <option value="hybrid" disabled>Hybrid Steel Frame (coming soon)</option>
+            <option value="rainscreen" disabled>Rainscreen (coming soon)</option>
+            <option value="internal" disabled>Internal Walls (coming soon)</option>
+          </select>
+        </div>
+
+        <div class="form-step hidden" id="step-2">
+          <label for="select-masonry-type">2. Select Masonry Type:</label>
+          <select id="select-masonry-type">
+            <option value="" selected disabled>Please select...</option>
+            <option value="full-fill">Masonry Full Fill</option>
+            <option value="partial-fill">Masonry Partial Fill</option>
+          </select>
+        </div>
+
+        <div class="form-step hidden" id="step-3">
+          <label for="select-insulation">3. Select Thermal Insulation:</label>
+          <select id="select-insulation">
+            <option value="" selected disabled>Please select...</option>
+            <option value="nyrock-032">Cavity Slab V1</option>
+            <option value="cavity-slab-035">Cavity Slab V2</option>
+          </select>
+        </div>
+
+        <div class="form-step hidden" id="step-4">
+          <label for="select-inner-leaf">4. Select Construction Type:</label>
+          <select id="select-inner-leaf">
+            <option value="" selected disabled>Please select...</option>
+            <option value="aircrete-hi">Aircrete Hi-Strength</option>
+            <option value="aircrete-std">Aircrete Standard</option>
+            <option value="medium-dense">Medium Dense Block</option>
+            <option value="dense">Dense Concrete Block</option>
+          </select>
+        </div>
+
+        <div class="form-step hidden" id="step-5">
+          <label for="select-outer-finish">5. Select Outside Finish:</label>
+          <select id="select-outer-finish">
+            <option value="" selected disabled>Please select...</option>
+            <option value="brick">Brick Finish</option>
+            <option value="render">Block and Render Finish</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
