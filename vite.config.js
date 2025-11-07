@@ -1,6 +1,6 @@
 /** @type {import('vite').UserConfig} */
 export default {
-  base: '/',
+  base: '/3d-wall-layer-demo/',
   build: {
     outDir: 'docs'
   }

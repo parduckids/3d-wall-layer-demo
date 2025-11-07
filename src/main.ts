@@ -87,12 +87,11 @@ const steps = {
 // === TEXTURE LOADER ===
 const textureLoader = new THREE.TextureLoader();
 const brickTextures = {
-  color: textureLoader.load('/textures/red_brick/red_brick_diff_1k.jpg'),
-  normal: textureLoader.load('/textures/red_brick/red_brick_nor_dx_1k.jpg'),
-  roughness: textureLoader.load('/textures/red_brick/red_brick_rough_1k.jpg'),
-  ao: textureLoader.load('/textures/red_brick/red_brick_ao_1k.jpg'),
+  color: textureLoader.load(new URL('../textures/red_brick/red_brick_diff_1k.jpg', import.meta.url).href),
+  normal: textureLoader.load(new URL('../textures/red_brick/red_brick_nor_dx_1k.jpg', import.meta.url).href),
+  roughness: textureLoader.load(new URL('../textures/red_brick/red_brick_rough_1k.jpg', import.meta.url).href),
+  ao: textureLoader.load(new URL('../textures/red_brick/red_brick_ao_1k.jpg', import.meta.url).href),
 };
-
 // SRGB color space and wrapping
 brickTextures.color.colorSpace = THREE.SRGBColorSpace;
 Object.values(brickTextures).forEach((t: THREE.Texture) => {
